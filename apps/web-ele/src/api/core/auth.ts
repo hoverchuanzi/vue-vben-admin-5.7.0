@@ -47,5 +47,7 @@ export async function logoutApi() {
  * 获取用户权限码
  */
 export async function getAccessCodesApi() {
-  return requestClient.get<string[]>('/auth/codes');
+  // 用户权限码暂时注释
+  return [];
+  // return requestClient.get<string[]>('/auth/codes');
 }
