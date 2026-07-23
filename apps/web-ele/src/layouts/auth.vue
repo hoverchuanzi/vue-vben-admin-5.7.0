@@ -13,9 +13,11 @@ const logoDark = computed(() => preferences.logo.sourceDark);
 
 <template>
   <AuthPageLayout
+    :toolbar="false"
     :app-name="appName"
     :logo="logo"
     :logo-dark="logoDark"
+    slogan-image="http://www.hoverchuanzi.top/logo.webp"
     :page-description="$t('authentication.pageDesc')"
     :page-title="$t('authentication.pageTitle')"
   >

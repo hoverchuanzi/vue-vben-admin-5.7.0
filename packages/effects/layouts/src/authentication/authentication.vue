@@ -121,7 +121,7 @@ const logoSrc = computed(() => {
             <img
               :alt="appName"
               :src="sloganImage"
-              class="h-64 w-2/5 animate-float"
+              class="h-auto w-[55%] max-h-[70vh] object-contain logo-glow"
             />
           </template>
           <SloganIcon v-else :alt="appName" class="h-64 w-2/5 animate-float" />
@@ -191,6 +191,31 @@ const logoSrc = computed(() => {
       #07070915 64%
     );
     filter: blur(100px);
+  }
+}
+
+.logo-glow {
+  animation: logo-breathe 4.5s ease-in-out infinite;
+  will-change: filter, transform;
+}
+
+@keyframes logo-breathe {
+  0%,
+  100% {
+    filter: brightness(0.9) drop-shadow(0 0 3px rgb(0 255 200 / 20%));
+    transform: scale(1);
+  }
+
+  50% {
+    filter: brightness(1.25) drop-shadow(0 0 10px rgb(0 255 200 / 65%))
+      drop-shadow(0 0 24px rgb(0 255 200 / 40%));
+    transform: scale(1.012);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-glow {
+    animation: none;
   }
 }
 </style>

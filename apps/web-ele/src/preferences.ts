@@ -11,4 +11,27 @@ export const overridesPreferences = defineOverridesPreferences({
     accessMode: 'backend',
     name: import.meta.env.VITE_APP_TITLE,
   },
+  theme: {
+    builtinType: 'green',
+    colorPrimary: 'hsl(161 90% 43%)',
+    radius: '0.5',
+    fontSize: 15,
+  },
+  transition: {
+    name: 'fade-up',
+  },
+  copyright: {
+    companyName: 'hover_chuanzi',
+    companySiteLink: 'https://www.hover_chuanzi.com',
+    date: '2026',
+    enable: true,
+    icp: '',
+    icpLink: '',
+    settingShow: true,
+  },
+  logo: {
+    enable: true,
+    fit: 'contain',
+    source: 'http://www.hoverchuanzi.top/logo.webp',
+  },
 });
