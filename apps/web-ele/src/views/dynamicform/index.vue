@@ -17,11 +17,7 @@ type DynamicFormExpose = {
 
 const formRef = ref<DynamicFormExpose>();
 const submittedData = ref('');
-const dynamicFormData = ref<FormData>({
-  name: '黄云飞',
-  gender: '男',
-  address: '中国',
-});
+const dynamicFormData = ref<FormData>({});
 
 async function submitForm() {
   try {

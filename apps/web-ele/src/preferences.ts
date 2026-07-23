@@ -16,9 +16,10 @@ export const overridesPreferences = defineOverridesPreferences({
     colorPrimary: 'hsl(161 90% 43%)',
     radius: '0.5',
     fontSize: 15,
+    mode: 'light',
   },
   transition: {
-    name: 'fade-up',
+    name: 'fade',
   },
   copyright: {
     companyName: 'hover_chuanzi',
